@@ -1,13 +1,18 @@
+html {
+	height: 100%;
+}
 body {
 	background-color: #2a2d34;
-	font-family: 'Roboto Condensed', sans-serif;
-}
-
-.background-cover {
 	background-image: url('../img/bg.gif');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	min-height: 100%;
+}
+
+.background-cover {
+	display: none;
 	position: absolute;
 	top: 0;
 	bottom: 0;
