@@ -947,6 +947,16 @@
     color: #226fbe;
 }
 
+.creative-btn-6i:disabled {
+	color: #efefef;
+	background: #ddd;
+	border: none;
+}
+
+.creative-btn-6i.success {
+	background-color: #2ecc71;
+}
+
 
 /* Button 6j */
 

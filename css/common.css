@@ -79,20 +79,21 @@ div.modal-content {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    padding: 0 20px;
 }
 a.modal-close-button {
 	cursor: pointer;
-	display: inline-block;
+	display: block;
 	border: none;
 	position: absolute;
 	top: 20px;
 	left: 0;
-	font-size: 1.4em;
+	font-size: 1.5em;
 	font-weight: bolder;
 	text-align: center;
 	height: 2em;
-	line-height: 1.9em;
+	line-height: 2em;
+	padding: 0;
+	margin: 0;
 	width: 50px;
 	background-color: rgba(0, 0, 0, 0.6);
 	color: rgba(255,255,255,0.6);
@@ -106,6 +107,11 @@ a.modal-close-button:hover {
 img.logo {
     max-width: 200px;
     width: 30%;
+}
+
+img.small-logo {
+    max-width: 100px;
+    width: 20%;
 }
 
 .landing-page-title {
@@ -148,6 +154,15 @@ img.logo {
     margin-bottom: 10px;
 }
 
+#modal-text.error {
+	color: #f06060;
+}
+
+.email-input:disabled  {
+	background: #ddd;
+	color: #fefefe;
+}
+
 @media (max-width: 320px) {
 	.btn-container {
 		width: 300px;
@@ -155,6 +170,14 @@ img.logo {
 
 	.email-input {
 		width: 300px;	
+	}
+}
+
+
+@media (max-width: 767px) {
+	#modal-text {
+		font-size: 0.6em;
+		margin: 10px;
 	}
 }
 

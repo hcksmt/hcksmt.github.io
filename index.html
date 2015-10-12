@@ -12,7 +12,9 @@
     <meta name="description" content="Helping developers work faster">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/common.css">
 </head>
@@ -43,18 +45,17 @@
         </div>
     </div>
     <div id="modal-container" class="modal-container">
-        <a onclick="toggleModal()" class="modal-close-button">×</a>
+        <a onclick="toggleModal()" class="modal-close-button"><i class="fa fa-times-circle"></i></a>
         <div class="modal-wrapper">
             <div class="modal-content">
-                <h2 id="modal-header"></h2>
-                <img class="logo" src="img/brand/logo.png" alt="Hacksmith">
+                <img class="small-logo" src="img/brand/logo.png" alt="Hacksmith">
                 <p id="modal-text"></p>
-                <form id="email-form" onsubmit="return subscribe(this);">
+                <form id="email-form" onsubmit="return subscribe(this);" novalidate>
                     <div class="btn-container">
                    	 	<input id="email-input" class="email-input" type="email" placeholder="name@example.com">
                 	</div>
                     <div class="btn-container">
-                        <button type="submit" class="creative-btn creative-btn-6 creative-btn-6i">Subscribe</button>
+                        <button id="submit-btn" type="submit" class="creative-btn creative-btn-6 creative-btn-6i">Subscribe</button>
                     </div>
                 </form>
             </div>
