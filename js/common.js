@@ -39,6 +39,7 @@ var subscribe = function() {
 		$('#submit-btn').text('subscribed!').addClass('success');
 	} else {
 		$('#modal-text').addClass('error').text('Please enter a valid email address');	
+		$('#email-input').focus();
 		enableForm();
 	}
 
