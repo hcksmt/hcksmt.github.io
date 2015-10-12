@@ -1,6 +1,9 @@
 var toggleModal = function(headerTxt, msgTxt) {
 	$('#modal-container').fadeToggle('fast');
+
+	$('#email-input').val('');
 	$('#modal-text').text(msgTxt);
+	enableForm();
 };
 
 var disableForm = function() {
