@@ -9,7 +9,7 @@ var toggleModal = function(headerTxt, msgTxt) {
 
 var clearForm = function() {
 	$('#modal-text').text();
-	$('#submit-btn').removeClass('success');
+	$('#submit-btn').text('subscribe').removeClass('success');
 	$('#email-input').val('');
 };
 
