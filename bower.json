@@ -1,0 +1,20 @@
+{
+  "name": "Hacksmith Website",
+  "version": "0.0.1",
+  "homepage": "https://github.com/hcksmt/hcksmt.github.io",
+  "authors": [
+    "Amos Haviv <mail@amoshaviv.com>"
+  ],
+  "description": "Hacksmith Website",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.x"
+  }
+}
