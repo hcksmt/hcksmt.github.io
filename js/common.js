@@ -8,7 +8,7 @@ var toggleModal = function(headerTxt, msgTxt) {
 };
 
 var clearForm = function() {
-	$('#modal-text').text();
+	$('#modal-text').text('').removeClass('error');
 	$('#submit-btn').text('subscribe').removeClass('success');
 	$('#email-input').val('');
 };
@@ -39,8 +39,8 @@ var subscribe = function() {
 		$('#submit-btn').text('subscribed!').addClass('success');
 	} else {
 		$('#modal-text').addClass('error').text('Please enter a valid email address');	
-		$('#email-input').focus();
 		enableForm();
+		$('#email-input').focus();
 	}
 
 	return false;

@@ -942,9 +942,11 @@
     border-radius: 60px;
 }
 
-.creative-btn-6i:hover {
-    background: transparent;
-    color: #226fbe;
+@media (min-width: 767px) {
+	.creative-btn-6i:hover {
+	    background: transparent;
+	    color: #226fbe;
+	}
 }
 
 .creative-btn-6i:disabled {
@@ -955,6 +957,7 @@
 
 .creative-btn-6i.success {
 	background-color: #2ecc71;
+	border: none;
 }
 
 
