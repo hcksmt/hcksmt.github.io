@@ -35,10 +35,10 @@
                 <hr class="small-divider">
                 <div class="btn-group">
                     <div class="btn-container">
-                        <button onclick="toggleModal('Most of us are!', 'Do not worry, subscribe to learn how we can help you to code faster.');" type="button" class="creative-btn creative-btn-4">I'M OKAY</button>
+                        <button onclick="reportEvent('speed', 'okay'); toggleModal('Most of us are!', 'Do not worry, subscribe to learn how we can help you to code faster.');" type="button" class="creative-btn creative-btn-4">I'M OKAY</button>
                     </div>
                     <div class="btn-container">
-                        <button onclick="toggleModal('Nice to meet you code runner!', 'Subscribe to learn how we can help you to code even faster.');" type="button" class="creative-btn creative-btn-4">I'M FAST</button>
+                        <button onclick="reportEvent('speed', 'fast'); toggleModal('Nice to meet you code runner!', 'Subscribe to learn how we can help you to code even faster.');" type="button" class="creative-btn creative-btn-4">I'M FAST</button>
                     </div>
                 </div>
             </div>
@@ -50,9 +50,9 @@
             <div class="modal-content">
                 <img class="small-logo" src="img/brand/logo.png" alt="Hacksmith">
                 <p id="modal-text"></p>
-                <form id="email-form" onsubmit="return subscribe(this);" novalidate>
+                <form id="email-form" onsubmit="subscribe(); return false;" novalidate>
                     <div class="btn-container">
-                   	 	<input id="email-input" class="email-input" type="email" placeholder="name@example.com">
+                   	 	<input name="EMAIL" id="email-input" class="email-input" type="email" placeholder="name@example.com">
                 	</div>
                     <div class="btn-container">
                         <button id="submit-btn" type="submit" class="creative-btn creative-btn-6 creative-btn-6i">Subscribe</button>
