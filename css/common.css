@@ -231,10 +231,10 @@ a.pioneer-name {
 
 @media (max-width: 320px) {
     .btn-container {
-        width: 274px;
+        width: 280px;
     }
     .email-input {
-        width: 274px;
+        width: 280px;
     }
     .pioneer {
         width: 274px;

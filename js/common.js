@@ -80,7 +80,8 @@ var getRandomPioneer = function() {
 
 var setPioneerInformation = function() {
     var pioneer = getRandomPioneer(pioneers);
-    // $('#pioneer-summary').html('<b>' + pioneer.name + '</b>, ' + pioneer.summary + ' <a target="_blank" href="' + pioneer.wikipedia + '">continue reading.</a>');
+    
+    reportEvent('selectedpioneer', pioneer.name);
     $('#pioneer-image').css('background-image', 'url(\'' + pioneer.image + '\')');
     $('#pioneer-quote').text(pioneer.quote);
     $('#pioneer-name').text('- ' + pioneer.name + ' -').attr('href', pioneer.wikipedia);
