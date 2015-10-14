@@ -13,7 +13,7 @@
     border: none;
     width: 100%;
     font-family: inherit;
-    font-size: inherit;
+    font-size: 0.8em;
     color: inherit;
     background: none;
     cursor: pointer;
@@ -823,7 +823,7 @@
 
 .creative-btn-6 {
     color: #fff;
-    background: #226fbe;
+    background: transparent;
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
@@ -938,14 +938,16 @@
 /* Button 6i */
 
 .creative-btn-6i {
-    border: 2px dotted #226fbe;
+    border: 2px solid #226fbe;
+	background: transparent;
+	    color: #226fbe;
     border-radius: 60px;
 }
 
 @media (min-width: 767px) {
 	.creative-btn-6i:hover {
-	    background: transparent;
-	    color: #226fbe;
+    	background: #226fbe;
+		color: #fff;
 	}
 }
 

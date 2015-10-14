@@ -16,6 +16,6 @@
   ],
   "dependencies": {
     "jquery": "1.x",
-    "font-awesome": "fontawesome#~4.4.0"
+    "font-awesome": "fontawesome#~4.4.0",
   }
 }

@@ -1,0 +1,41 @@
+[{
+    "name": "Ada Lovelace",
+    "quote": "That brain of mine is something more than merely mortal, as time will show.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ada_Lovelace",
+    "image": "img/pioneers/ada-lovelace.jpg"
+}, {
+    "name": "Alan Turing",
+    "quote": "Machines take me by surprise with great frequency.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Alan_Turing",
+    "image": "img/pioneers/alan-turing.jpg"
+}, {
+    "name": "Douglas Engelbart",
+    "quote": "The digital revolution is far more significant than the invention of writing or even of printing.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Douglas_Engelbart",
+    "image": "img/pioneers/douglas-engelbart.jpg"
+}, {
+    "name": "Grace Hopper",
+    "quote": "The most damaging phrase in the language is \"We’ve always done it this way!\".",
+    "wikipedia": "https://en.wikipedia.org/wiki/Grace_Hopper",
+    "image": "img/pioneers/grace-hopper.jpg"
+}, {
+    "name": "Alan Kay",
+    "quote": "The best way to predict the future is to invent it.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Alan_Kay",
+    "image": "img/pioneers/alan-kay.jpg"
+}, {
+    "name": "Jean Bartik",
+    "quote": "I loved every minute of what I did. If you don't love what you do, what do you have?",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jean_Bartik",
+    "image": "img/pioneers/jean-bartik.jpg"
+}, {
+    "name": "Tim Berners-Lee",
+    "quote": "Innovation is serendipity, so you don't know what people will make.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tim_Berners-Lee",
+    "image": "img/pioneers/tim-berners-lee.jpg"
+}, {
+    "name": "Margaret Hamilton",
+    "quote": "There was no second chance. We all knew that.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)",
+    "image": "img/pioneers/margaret-hamilton.jpg"
+}]

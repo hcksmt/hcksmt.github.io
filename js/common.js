@@ -1,14 +1,16 @@
+var pioneers = [];
+
 var reportEvent = function(category, action) {
     ga('send', 'event', category, action);
 };
 
-var toggleModal = function(headerTxt, msgTxt) {
+var toggleModal = function(msgTxt) {
     $('#modal-container').fadeToggle('fast');
 
     clearForm();
     enableForm();
 
-    $('#modal-text').text(msgTxt);
+    $('#modal-text').html(msgTxt);
 };
 
 var clearForm = function() {
@@ -43,8 +45,6 @@ var postMailChimp = function(cb) {
         success: cb
     });
 };
-
-
 var subscribe = function(e) {
     reportEvent('subscription', 'clicked');
 
@@ -53,15 +53,15 @@ var subscribe = function(e) {
 
     if (validateEmail()) {
         postMailChimp(function(res) {
-        	if (res['result'] != "success") {
-        		reportEvent('subscription', 'error');
-		        $('#modal-text').addClass('error').html(res['msg']);
-		        enableForm();		
-		        $('#email-input').focus();
-        	} else {
-	            reportEvent('subscription', 'success');
-	            $('#modal-text').text('Thank you for joining! Check your email for further instructions!');
-	            $('#submit-btn').text('subscribed!').addClass('success');
+            if (res['result'] != "success") {
+                reportEvent('subscription', 'error');
+                $('#modal-text').addClass('error').html(res['msg']);
+                enableForm();
+                $('#email-input').focus();
+            } else {
+                reportEvent('subscription', 'success');
+                $('#modal-text').text('Thank you for joining! Check your email for further instructions!');
+                $('#submit-btn').text('subscribed!').addClass('success');
             }
         });
     } else {
@@ -73,3 +73,22 @@ var subscribe = function(e) {
 
     return false;
 };
+
+var getRandomPioneer = function() {
+    return pioneers[Math.floor(Math.random() * pioneers.length)];
+};
+
+var setPioneerInformation = function() {
+    var pioneer = getRandomPioneer(pioneers);
+    // $('#pioneer-summary').html('<b>' + pioneer.name + '</b>, ' + pioneer.summary + ' <a target="_blank" href="' + pioneer.wikipedia + '">continue reading.</a>');
+    $('#pioneer-image').css('background-image', 'url(\'' + pioneer.image + '\')');
+    $('#pioneer-quote').text(pioneer.quote);
+    $('#pioneer-name').text('- ' + pioneer.name + ' -').attr('href', pioneer.wikipedia);
+};
+
+$(document).ready(function() {
+    $.getJSON("data/pioneers.json", function(data) {
+        pioneers = data;
+        setPioneerInformation();
+    });
+});

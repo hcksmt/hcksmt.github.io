@@ -8,11 +8,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="apple-touch-icon" href="img/brand/apple-touch-icon.png">
     <link href="favicon.ico" type="image/x-icon" rel="icon">
-    <title>Hacksmith - You can be faster</title>
+    <title>Hacksmith - A Tool For True Developers.</title>
     <meta name="description" content="Helping developers work faster">
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Tulpen+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="js/vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/buttons.css">
@@ -29,17 +29,18 @@
     <div class="content-container">
         <div class="content-wrapper">
             <div class="content">
-                <h1 class="landing-page-title">HOW FAST <br> DO YOU <br> CODE?</h1>
-                <hr class="small-divider">
-                <img class="logo" src="img/brand/logo.png" alt="Hacksmith">
-                <hr class="small-divider">
-                <div class="btn-group">
-                    <div class="btn-container">
-                        <button onclick="reportEvent('speed', 'okay'); toggleModal('Most of us are!', 'Do not worry, subscribe to learn how we can help you to code faster.');" type="button" class="creative-btn creative-btn-4">I'M OKAY</button>
+                <div class="logo-container">
+                    <img onclick="setPioneerInformation();" class="small-logo" src="img/brand/logo.png" alt="Hacksmith">
+                </div>
+                <div id="pioneer" class="pioneer">
+                    <div id="pioneer-image" class="pioneer-image"></div>
+                    <div class="pioneer-quote-container">
+                        <h2 id="pioneer-quote" class="pioneer-quote">Loading...</h2>
+                        <a target="_blank" id="pioneer-name" class="pioneer-name" href=""></a>
                     </div>
-                    <div class="btn-container">
-                        <button onclick="reportEvent('speed', 'fast'); toggleModal('Nice to meet you code runner!', 'Subscribe to learn how we can help you to code even faster.');" type="button" class="creative-btn creative-btn-4">I'M FAST</button>
-                    </div>
+                </div>
+                <div class="btn-container">
+                    <button onclick="reportEvent('moreinfo', 'clicked'); toggleModal('Subscribe to get the first invites.');" type="button" class="creative-btn creative-btn-4">Learn more</button>
                 </div>
             </div>
         </div>
@@ -48,12 +49,13 @@
         <a onclick="toggleModal()" class="modal-close-button"><i class="fa fa-times-circle"></i></a>
         <div class="modal-wrapper">
             <div class="modal-content">
+                <h4>We're building a tool for developers.</h4>
                 <img class="small-logo" src="img/brand/logo.png" alt="Hacksmith">
                 <p id="modal-text"></p>
                 <form id="email-form" onsubmit="subscribe(); return false;" novalidate>
                     <div class="btn-container">
-                   	 	<input name="EMAIL" id="email-input" class="email-input" type="email" placeholder="name@example.com">
-                	</div>
+                        <input name="EMAIL" id="email-input" class="email-input" type="email" placeholder="name@example.com">
+                    </div>
                     <div class="btn-container">
                         <button id="submit-btn" type="submit" class="creative-btn creative-btn-6 creative-btn-6i">Subscribe</button>
                     </div>
