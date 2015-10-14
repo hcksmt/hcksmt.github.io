@@ -240,6 +240,10 @@ a.pioneer-name {
         width: 274px;
         height: 274px;
     }
+
+    .pioneer-quote {
+		font-size: 1.6em;
+    }
 }
 
 @media (min-width: 767px) {
